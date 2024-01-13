@@ -11,7 +11,7 @@ def analyze_and_visualize(csv_file):
 
     # Data analysis
     # Count the number of occurrences for each reviewer_label (0, 1, -1, -5, -7, -88, -99) and display the results.
-    specified_labels = [0, 1, -1,-3, -5, -7, -9, -88, -99]
+    specified_labels = [0, 1, -1,-3, -5, -7, -8, -9, -88, -99]
     label_counts = data['reviewer_label'].value_counts().reindex(specified_labels, fill_value=0)
     # Calculate the progress rate, defined as the proportion of reviewer_label entries that are marked as 0, 1, or -99, out of the total reviewer_label entries (including those not labeled).
     progress_labels = [0, 1, -99]
